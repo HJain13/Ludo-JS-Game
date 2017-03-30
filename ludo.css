@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+@keyframes example {
+    0% {opacity: 0}
+    50% {opacity: 1;}
+    100% {opacity: 0}
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+	font-size: 48px;
+}
+
+#ludo-base{
+	width: 600px;
+	height: 600px;
+	margin: 50px auto;
+	border: 6px double black;
+    z-index: -2;	
+}
+
+canvas{
+	position: absolute;
+	margin-top: -11px;
+	margin-left: -11px;
+    z-index: 0;	
+}
+
+.player-base{
+	width: 180px;
+	height: 180px;
+	z-index: 1;	
+}
+
+.pbase1{
+	position: absolute;
+	border: 30px double #eff; 
+	background-color: #f22;
+}
+
+.pbase2{
+	position: absolute;
+	margin-left: 360px;
+	border: 30px double #eff; 	
+	background-color: #083;
+}
+
+.pbase3{
+	position: absolute;
+	margin-top: 360px;
+	border: 30px double #eff; 
+	background-color: #33f;
+}
+
+.pbase4{
+	position: absolute;
+	margin-top: 360px;
+	margin-left: 360px;
+	border: 30px double #eff; 
+	background-color: #ff3;
+}
+
+.winner-base{
+	position: absolute;
+	border-left: 60px solid #f22;
+	border-right: 60px solid #ff3;
+	border-top: 60px solid #083;
+	border-bottom: 60px solid #33f;
+	width: 0px;
+	height: 0px;
+	margin-top: 240px;
+	margin-left: 240px;	
+	background-color: #999;
+	z-index: 1;		
+}
+
